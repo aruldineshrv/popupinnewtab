@@ -1,0 +1,13 @@
+<div class="center">
+<h1>NEW TAB POPUP</h1>
+<button (click)="this.showPortal = true">OPEN NEW TAB!</button>
+</div>
+<!-- Whatever you wrap with the '<window>' component will be rendered on a new window  -->
+<app-popupwindow *ngIf="showPortal">
+  <div class="center">
+  <h2>NEW TAB CREATED!</h2>
+  <app-childwindow> </app-childwindow>
+  <BR>
+  <button (click)="getPor()">Close this tab</button>
+</div>
+</app-popupwindow>
